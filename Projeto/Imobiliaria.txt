@@ -1,0 +1,7 @@
+Mobiliaria
+
+imoveisMobiliaria <Imovel>
+ganhoTotal
+
++addImovel
+-atualizarValorTotal

@@ -1,0 +1,20 @@
+Imovel
+
+valor de venda double (set)
+Endereço String (set e get)
+Ano de construção: int (>1800) (set)
+percentualCalcAluguel: int
+DESCONTO_MAX = 0.03 DOUBLE
+COMISSAO_IMOBILIARIA = 0,12 double
+descontoAluguel: double 
+AcrescimoBeneficio: double (set)
+valorAluguel: double (get)
+taxasServico: double (get)
+valorAluguelImobiliaria: double (get)
+valorTotalImovel: double (get)
+
+
+#(abstract) #valorServico: double
+-calculaAluguel: void
+-calculaAluguelImobiliaria
++atualizarAcrescimoBeneficio: void

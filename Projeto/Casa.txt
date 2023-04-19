@@ -1,0 +1,8 @@
+Casa
+
+PERCENTUAL_CALC_CASA: 0,005 double
+TAXA_DESCONTO_APTO: 0,1 double
+seguroIncendio: double
+
++atualizarSeguroIncedio
+#valorServico: double

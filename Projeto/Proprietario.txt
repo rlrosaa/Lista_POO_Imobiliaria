@@ -1,0 +1,8 @@
+Proprietario
+
+imoveisProprietario <Imovel>
+aluguelTotal double
+aluguelLiquido double
+
+-atualizarValorTotal
++addImovel
