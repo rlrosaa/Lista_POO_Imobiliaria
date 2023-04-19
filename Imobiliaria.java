@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Imobiliaria {
     ArrayList<Imovel> imoveisImobiliaria;
-    double ganhoTotal;
+    private double ganhoTotal;
     
     /** Cria o objeto Imobiliaria sem adicionar nenhum imovel na lista. O valor de ganho total é estabelicido como ZERO */
     public Imobiliaria (){
@@ -27,6 +27,11 @@ public class Imobiliaria {
         atualizarValorTotal(imovel.getValorAluguelImobiliaria());
     }
 
+    public void removeImovel(Imovel imovel){
+        imoveisImobiliaria.remove(imovel);
+        atualizarValorTotal(0- imovel.getValorAluguelImobiliaria());
+    }
+
     private void inicializar(){
         imoveisImobiliaria = new ArrayList<>();
         ganhoTotal = 0;
@@ -34,5 +39,9 @@ public class Imobiliaria {
 
     private void atualizarValorTotal (double valorAluguel){
         this.ganhoTotal += valorAluguel;
+    }
+
+    public double getGanhoTotal(){
+        return ganhoTotal;
     }
 }
